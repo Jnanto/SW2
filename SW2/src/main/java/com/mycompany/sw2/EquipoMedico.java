@@ -6,18 +6,18 @@ public class EquipoMedico implements IProducto {
 
     @Override
     public void validarCondiciones() {
-        System.out.println("[Validacion] Asignando protocolo de almacenamiento en cadena de frio o ambiente controlado.");
-        System.out.println("[Validacion] Configurando transporte especializado para equipos delicados.");
+        System.out.println("[Validacion] Asignando protocolo de almacenamiento");
+        System.out.println("[Validacion] Configurando transporte");
     }
 
     @Override
     public void registrar(String nombre) {
         this.nombre = nombre;
-        System.out.println("-> Registrando en inventario el equipo medico: " + this.nombre);
+        System.out.println("Registrando en inventario: " + this.nombre);
     }
 
     @Override
     public String obtenerDetalles() {
-        return "Equipo Medico [" + this.nombre + "] - Logistica de transporte configurada.";
+        return "Equipo Medico [" + this.nombre + "] - configurado";
     }
 }

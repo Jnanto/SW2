@@ -6,7 +6,7 @@ public abstract class TiendaHealthPlus {
 
     public IProducto procesarAltaProducto(String nombreProducto) {
         IProducto producto = crearProducto();
-        System.out.println("Iniciando protocolos de validacion...");
+        System.out.println("Iniciando validacion");
         producto.validarCondiciones();
         producto.registrar(nombreProducto);
         System.out.println("Estado final: " + producto.obtenerDetalles());

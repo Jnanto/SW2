@@ -4,18 +4,18 @@ public class DispositivoInteligente implements IProducto {
 
     @Override
     public void validarCondiciones() {
-        System.out.println("[Validacion] Verificando compatibilidad con aplicaciones moviles del sistema.");
-        System.out.println("[Validacion] Realizando prueba de conexión de sensores para monitoreo de signos vitales.");
+        System.out.println("[Validacion] Verificando compatibilidad");
+        System.out.println("[Validacion] Realizando prueba de conexión");
     }
 
     @Override
     public void registrar(String nombre) {
         this.nombre = nombre;
-        System.out.println("-> Registrando en inventario el dispositivo inteligente: " + this.nombre);
+        System.out.println("Registrando en inventario: " + this.nombre);
     }
 
     @Override
     public String obtenerDetalles() {
-        return "Dispositivo Inteligente [" + this.nombre + "] - Sincronizado y listo para monitoreo.";
+        return "Dispositivo Inteligente [" + this.nombre + "] - listo";
     }
 }

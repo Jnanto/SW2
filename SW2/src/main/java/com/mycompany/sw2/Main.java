@@ -33,7 +33,7 @@ public class Main {
             if (opcion.equals("4")) {
                 System.out.println("\n--- Inventario Actual ---");
                 if (inventario.isEmpty()) {
-                    System.out.println("No hay productos registrados en el sistema.");
+                    System.out.println("No hay productos registrados");
                 } else {
                     for (int i = 0; i < inventario.size(); i++) {
                         System.out.println((i + 1) + ". " + inventario.get(i).obtenerDetalles());
@@ -53,7 +53,7 @@ public class Main {
                 case "3" ->
                     seccion = new SeccionTecnologia();
                 default ->
-                    System.out.println("Opcion no valida. Intente nuevamente.");
+                    System.out.println("Opcion no valida");
             }
 
             if (seccion != null) {
