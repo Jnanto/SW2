@@ -1,11 +1,11 @@
 package com.mycompany.sw2;
-public class DispositivoInteligente implements IProducto {
+public class Suplemento implements IProducto {
     private String nombre;
 
     @Override
     public void validarCondiciones() {
-        System.out.println("[Validacion] Verificando compatibilidad");
-        System.out.println("[Validacion] Realizando prueba de conexión");
+        System.out.println("[Validacion] Verificando Disponibilidad");
+        System.out.println("[Validacion] Realizando prueba de calidad");
     }
 
     @Override
@@ -16,6 +16,6 @@ public class DispositivoInteligente implements IProducto {
 
     @Override
     public String obtenerDetalles() {
-        return "Dispositivo Inteligente [" + this.nombre + "] - listo";
+        return "Suplemento [" + this.nombre + "] - listo";
     }
 }

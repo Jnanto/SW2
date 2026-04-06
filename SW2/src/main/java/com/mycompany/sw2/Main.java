@@ -51,7 +51,7 @@ public class Main {
                 case "2" ->
                     seccion = new SeccionEquipos();
                 case "3" ->
-                    seccion = new SeccionTecnologia();
+                    seccion = new SeccionSuplementos();
                 default ->
                     System.out.println("Opcion no valida");
             }
